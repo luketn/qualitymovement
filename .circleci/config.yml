@@ -31,5 +31,5 @@ jobs:
           name: deploy
           command: |
             . venv/bin/activate
-            aws cloudformation deploy template.yml
+            ./deploy.sh
           
