@@ -3,7 +3,7 @@
 SUBDOMAIN=$1
 
 echo "Started CloudFormation deployment of qualitymovement.org at "`date`"..."
-aws cloudformation deploy --region us-east-1 --template-file ../template.yml --stack-name site \
+aws cloudformation deploy --region us-east-1 --template-file ../template.yml --stack-name qualitymovement-site \
         --parameter-overrides \
             "HostedZoneName=qualitymovement.org." \
             "WebsiteAddress=qualitymovement.org" \
