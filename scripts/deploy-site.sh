@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-SUBDOMAIN=$1
-aws s3 sync ../site/ s3://$SUBDOMAIN-site/
+aws s3 sync ../site/ s3://qualitymovement-site/
