@@ -31,5 +31,6 @@ jobs:
           name: deploy
           command: |
             . venv/bin/activate
+            chmod +x deploy.sh
             ./deploy.sh
           
