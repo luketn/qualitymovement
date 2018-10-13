@@ -3,7 +3,7 @@
 echo "Testing that the site is running..."
 PAGE=$(curl "https://qualitymovement.org")
 
-if [ "$PAGE" == *"Quality Movement"* ]
+if [[ $PAGE == *"Quality Movement"* ]]
 then
   echo "
 --------
