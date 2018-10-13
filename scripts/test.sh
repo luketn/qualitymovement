@@ -3,7 +3,7 @@
 echo "Testing that the site is running..."
 PAGE=$(curl "https://qualitymovement.org")
 
-if [ "$PAGE" == "Welcome to CloudFront - This site was built and deployed with CloudFormation." ]
+if [ "$PAGE" == *"Quality Movement"* ]
 then
   echo "
 --------
