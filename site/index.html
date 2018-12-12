@@ -41,20 +41,42 @@
       margin-bottom: 40px;
       z-index: 900;
     }
+    @media screen and (max-width: 720px) {
+      .break-title {
+        font-size: 32px;
+      }
+      .break-subtitle-full {
+        display: none;
+      }
+      .break-subtitle-small {
+        display: block;
+        font-size: 24px;
+      }
+    }
+    @media screen and (min-width: 720px) {
+      .break-subtitle-full {
+        display: block;
+        font-size: 32px;
+      }
+      .break-subtitle-small {
+        display: none;
+      }
+    }
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <div class="mdl-layout__header-row">
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <div class="mdl-layout__header-row">
           <div>
-            <h2><a href="/" class="nolinklink">qualitymovement.org</a></h2>
-            <p class="heading-stylish">A grass-roots movement to change the way we build and consume the stuff of life.</p>
+            <h2><a href="/" class="nolinklink break-title">qualitymovement.org</a></h2>
+            <p class="heading-stylish break-subtitle-full">A grass-roots movement to change our quality of life.</p>
+            <p class="heading-stylish break-subtitle-small">Build and buy quality.</p>
           </div>
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <div class="mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#manifesto" class="mdl-layout__tab is-active">Quality Manifesto</a>
